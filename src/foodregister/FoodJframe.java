@@ -7,10 +7,9 @@
 package foodregister;
 import java.sql.* ;
 
-/**
- *
- * @author jahneugene
- */
+
+
+
 public class FoodJframe extends javax.swing.JFrame {
 
     /** Creates new form FoodJframe */
@@ -425,7 +424,7 @@ public class FoodJframe extends javax.swing.JFrame {
             System.out.println("Connected");
             Statement stmt = (Statement) conn.createStatement();
             String query = "SELECT * FROM users";
-            String sql="SELECT city FROM tblCustomer WHERE tblCustomer.name='"+ name+"'";
+            String sql="SELECT password FROM tblCustomer WHERE tblCustomer.name='"+ name+"'";
             ResultSet rs = stmt.executeQuery(sql);
             //System.out.println(rs);
             
@@ -434,12 +433,12 @@ public class FoodJframe extends javax.swing.JFrame {
                 //System.out.println(" no user name");
             }
             else{
-                confirmPassword = rs.getString("city");
+                confirmPassword = rs.getString("password");
                 //System.out.println(confirmPassword + "\n");
             }
             
             while (rs.next()) {
-                 confirmPassword = rs.getString("city");
+                 confirmPassword = rs.getString("password");
                  //System.out.println(confirmPassword + "\n");
             }
             
@@ -518,30 +517,7 @@ public class FoodJframe extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        
-//        Connection conn = null;
-//        try {
-//            conn = DriverManager.getConnection(CONN_STRING, USERNAME, PASSWORD);
-//            System.out.println("Connected");
-//            Statement stmt = (Statement) conn.createStatement();
-//            String name = "JAME";
-//            String city = "Brown";
-//            String insert = "INSERT INTO tblCustomer ( name, city) VALUES ('"+name+"','"+city+"')";  
-//            String insert2 = "INSERT INTO tblCustomer " + "VALUES (1001, 'Simpson', 'Mr.', 'Springfield', 2001)";
-//            stmt.executeUpdate(insert);
-//        
-//        
-//        }catch (SQLException e){
-//            System.err.println(e);
-//        
-//        
-//        }
-        
-        
-        
-        
-        
-        
+       
         
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -601,8 +577,10 @@ public class FoodJframe extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     
-    private static  final String USERNAME= "root";
-    private static final String PASSWORD= "root";
-    private static final String CONN_STRING = "jdbc:mysql://localhost:8889/aptechsfc";
+    private static  final String USERNAME= "sql3197801";
+    private static final String PASSWORD= "dkqqPG6GXH";
+    private static final String CONN_STRING = "jdbc:mysql://sql3.freemysqlhosting.net/sql3197801";
+            
+//    private static final String CONN_STRING = "jdbc:mysql://localhost:8889/aptechsfc";
     
 }
