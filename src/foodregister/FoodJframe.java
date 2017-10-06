@@ -581,6 +581,5 @@ public class FoodJframe extends javax.swing.JFrame {
     private static final String PASSWORD= "dkqqPG6GXH";
     private static final String CONN_STRING = "jdbc:mysql://sql3.freemysqlhosting.net/sql3197801";
             
-//    private static final String CONN_STRING = "jdbc:mysql://localhost:8889/aptechsfc";
     
 }
