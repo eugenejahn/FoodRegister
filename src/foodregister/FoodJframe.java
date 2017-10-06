@@ -576,6 +576,9 @@ public class FoodJframe extends javax.swing.JFrame {
     private javax.swing.JLabel warningLabel;
     // End of variables declaration//GEN-END:variables
 
+
+//    private static final String CONN_STRING = "jdbc:mysql://localhost:3306/id3147915_eugenejahn";   
+    
     
     private static  final String USERNAME= "sql3197801";
     private static final String PASSWORD= "dkqqPG6GXH";
