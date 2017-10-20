@@ -313,6 +313,7 @@ public class FoodJframe extends javax.swing.JFrame {
         
         
         try {
+        	System.out.println(CONN_STRING);
             conn = DriverManager.getConnection(CONN_STRING, USERNAME, PASSWORD);
             System.out.println("Connected");
             Statement stmt = (Statement) conn.createStatement();
@@ -577,7 +578,6 @@ public class FoodJframe extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
 
-//    private static final String CONN_STRING = "jdbc:mysql://localhost:3306/id3147915_eugenejahn";   
     
     
     private static  final String USERNAME= "sql3197801";
