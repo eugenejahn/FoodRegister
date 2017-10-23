@@ -707,8 +707,8 @@ public class FoodJframe extends javax.swing.JFrame {
 //    private static final String CONN_STRING = "jdbc:mysql://localhost:3306/id3147915_eugenejahn";   
     
     
-    private static  final String USERNAME= "sql3197801";
-    private static final String PASSWORD= "dkqqPG6GXH";
+    private static  final String USERNAME= "   ";
+    private static final String PASSWORD= "   ";
     private static final String CONN_STRING = "jdbc:mysql://sql3.freemysqlhosting.net/sql3197801";
             
     
